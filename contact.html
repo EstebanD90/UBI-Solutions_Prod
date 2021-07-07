@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - UBI Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <!--<a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>-->
+            <a class="header__brand" href="index.html"><span>UBI </span>Solutions</a>
+        </div>
+        <nav class="header__menu animate__animated animate__flipInX">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="" class="nosotros">Nosotros</a>
+                    <ul>
+                        <li><a href="about-us.html" class="metodologias">Tecnologías</a></li>
+                        <li><a href="about-us.html" class="about.us">Nuestra Empresa</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="servicios">Servicios</a>
+                    <ul>
+                        <li><a href="services.html" class="servicio_1">Desarrollo de sistemas</a></li>
+                        <li><a href="services.html" class="servicio_2">Módulos E-Commerce & BI</a></li>
+                        <li><a href="services.html" class="servicio_3">Sales Takes Order</a></li>
+                    </ul>
+                </li>
+                <li><a href="clients.html" class="clientes">Clientes</a></li>
+                <li><a href="contact.html" class="contacto">Contacto</a></li>
+            </ul>
+
+            <!---               
+            <aside class="header__language">
+                <h6> ¿Desea otro idioma?:</h6>
+                <input type="button" value="ESP">
+                <input type="button" value="ENG">
+            </aside>
+            -->
+
+        </nav>
+    </header>
+
+    <main class="contact__main">
+        <div class="contact__titulo">
+            <h2>Contacto</h2>
+        </div>
+        <section id="contact__form">
+            <form action="" method="" enctype="text/plain">
+                <div class="contact__nombre">
+                    <input id="nombre" type="text" name="nombre" value size="40" aria-required="true"
+                        aria-invalid="false" placeholder="Nombre:">
+                </div>
+                <div class="contact__apellidos">
+                    <input id="apellido" type="text" name="apellido" value size="40" aria-required="true"
+                        aria-invalid="false" placeholder="Apellido:">
+                </div>
+                <div class="contact__mail">
+                    <input id="mail" type="mail" name="mail" value size="40" aria-required="true" aria-invalid="false"
+                        placeholder="Mail:">
+                </div>
+                <div class="contact__asunto">
+                    <label for="asunto">Asunto:</label>
+                    <select name="asunto" id="asunto">
+                        <option value=""></option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Cotización">Cotización</option>
+
+                    </select>
+                </div>
+
+                <div class="contact__mensaje">
+                    <textarea id="tu-mensaje" name="tu-mensaje" cols="42" rows="10" aria-required="true"
+                        aria-invalid="false" placeholder="Mensaje:">
+                    </textarea>
+                </div>
+
+                <div class="contact__chbx-novedades">
+                    <label for="novedades">¿Desea recibir nuestras novedades por correo?</label>
+                    <input id="novedades" type="checkbox" name="novedades" value="1">
+                </div>
+
+                <div class="contact__btn-submit-reset">
+                    <input type="submit" value="Enviar Mensaje">
+                    <input type="reset" value="Borrar Contenido">
+                </div>
+
+            </form>
+
+
+            <div class="contact__space">
+
+
+            </div>
+    </main>
+
+    <footer>
+        <section id="footer">
+            <!--<div class="footer__container"></div>-->
+            <div class="footer__container__info1">
+                <a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>
+                <h3 class="footer__section__title">Acerca Nuestro</h3>
+                <ul class="footer__contact_info">
+                    <li>
+                        <p>Dirección: Avenida xxxxxx 0000 C.P.: 0000</p>
+                    </li>
+                    <li>
+                        <p>Teléfono: 1111-1111</p>
+                    </li>
+                    <li>
+                        <p>Email: contacto@ubisolutions.com</p>
+                    </li>
+
+                </ul>
+                <h3 class="footer__section__title">Nuestras Redes</h3>
+                <ul class="footer__social__media">
+
+                </ul>
+                <!--<div class="developer__contain"></div>-->
+
+            </div>
+
+            <div class="footer__container__info2">
+                <li>
+                    <p>Desarrollado por: Esteban Diaz - 2021. <strong> UBI Solutions. &copy; </strong></p>
+                </li>
+            </div>
+
+            <div class="footer__container__info3">
+                <h3 class="footer__section__title"> Envianos un mensaje rápido!</h3>
+                <form class="footer__contact__form">
+                    <div class="footer__form">
+                        <label for="name" class="form__label">Nombre</label>
+                        <input type="name" class="form__control" id="name" aria-required="true" aria-invalid="false"
+                            placeholder="Nombre">
+                    </div>
+                    <div class="footer__form">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" class="form__control" id="email" aria-required="true" aria-invalid="false"
+                            placeholder="Email">
+                    </div>
+                    <div class="footer__form">
+                        <label for="message" class="form__label">Mensaje</label>
+                        <textarea class="form__control" id="message" rows="5" aria-required="true" aria-invalid="false"
+                            placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="footer__form">
+                        <input type="submit" id="btn__submit" class="btn__send-message" value="Enviar Mensaje">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+</html>
