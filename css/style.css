@@ -30,8 +30,8 @@
 */
 @font-face {
     font-family: 'Icomoon';
-    src: url(‘http://127.0.0.1:5500/fonts/Icomoon/icomoon.eot?srf3rx′);
-    src: url(‘http://127.0.0.1:5500/fonts/Icomoon/icomoon.eot?srf3rx#iefix) format("embedded-opentype"), url('http://127.0.0.1:5500/fonts/icomoon/icomoon.ttf?srf3rx') format("truetype"), url("http://127.0.0.1:5500/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("http://127.0.0.1:5500/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    src: url(‘../fonts/Icomoon/icomoon.eot?srf3rx′);
+    src: url(‘../fonts/Icomoon/icomoon.eot?srf3rx#iefix) format("embedded-opentype"), url('http://127.0.0.1:5500/fonts/icomoon/icomoon.ttf?srf3rx') format("truetype"), url("http://127.0.0.1:5500/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("http://127.0.0.1:5500/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -110,6 +110,7 @@ body {
 .header__menu ul {
     display: inline-flex;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .header__menu ul li {
@@ -185,7 +186,7 @@ body {
     text-decoration: none;
     width: auto;
     height: 1000px;
-    background-image: url(http://127.0.0.1:5500/images/pexels-photo-886465_2.jpeg);
+    background-image: url(../images/pexels-photo-886465_2.jpeg);
     background-position: center;
     background-size: cover;
     background-blend-mode:multiply;    
@@ -195,7 +196,20 @@ body {
     padding-top: 15px ;
 }
 
-#page__content .main__titulo1 {
+
+#fh5co-home {
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    background-color: #9fa3a5;
+    color: #fff;
+    max-width: none;
+    display: flow-root;
+}
+
+#fh5co-home .main__titulo1 {
     color: white;
     text-decoration: none;
     line-height: 2.0;
@@ -208,7 +222,7 @@ body {
 
 }
 
-#page__content .main__titulo2 {
+#fh5co-home .main__titulo2 {
     color: white;
     line-height: 1.5;
     text-align: center;
@@ -220,8 +234,7 @@ body {
 
 }
 
-
-#page__content .main__titulo3 {
+#fh5co-home .main__titulo3 {
     color: white;
     line-height: 1.0;
     text-align: center;
@@ -230,8 +243,66 @@ body {
     font-style:normal;
     font-size: 40px;
     padding: 0px;
-
+    align-items: center;
     transform: scale(1.2);
+
+}
+
+
+#fh5co-home .gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#fh5co-home .row {
+    display:inherit;
+    align-items: center;
+    text-align: center;
+}
+
+.col-md-8 {
+    margin-right: 0px;
+}
+
+#fh5co-home, #fh5co-home .text-wrap {
+    height: 850px;
+}
+
+#fh5co-home .text-wrap {
+    display: table;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+#fh5co-home .text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+#fh5co-home .text-inner h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+#fh5co-home .text-inner h2 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 60px 0;
 
 }
 
@@ -494,7 +565,7 @@ body {
     padding: 80px;
     width: auto;
     height: 800px;
-    background-image: url(http://127.0.0.1:5500/images/background-2462431_1920.jpg);
+    background-image: url(../images/background-2462431_1920.jpg);
     background-position: center;
     background-size:cover;
     background-blend-mode:normal;
