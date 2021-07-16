@@ -267,10 +267,12 @@ body {
 
 .col-md-8 {
     margin-right: 0px;
+    max-width: 0%;
 }
 
+
 #fh5co-home, #fh5co-home .text-wrap {
-    height: 850px;
+    height: 1000px;
 }
 
 #fh5co-home .text-wrap {
@@ -562,14 +564,10 @@ body {
 }
 
 #clients__contain {
-    padding: 80px;
+    padding: 120px;
     width: auto;
-    height: 800px;
-    background-image: url(../images/background-2462431_1920.jpg);
-    background-position: center;
-    background-size:cover;
-    background-blend-mode:normal;
-    background-repeat:space;
+    height: 1200px;
+    /*background-image: url(../images/background-2462431_1920.jpg);*/
     text-align: center;
 }
 
@@ -577,6 +575,24 @@ body {
     width: 20%;
     height: auto;
     padding: 40px;
+}
+
+.container__images {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto; 
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.container__images img {
+    width: 80%;
+    height: 30%;
+    padding: 10px;
 }
 
 .contact__titulo {
@@ -602,7 +618,8 @@ body {
     font-style: normal;
     font-size: 18px; 
     text-align: center;
-    
+    font-family: "PT Sans",sans-serif;
+    padding: 50px 0px 50px 0px;
 }
 
 .contact__space { 
