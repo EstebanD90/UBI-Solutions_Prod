@@ -7,44 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - UBI Solutions</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="icons/Logo-favicon.PNG">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header class="header">
-        <div class="header__logo">
-            <!--<a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>-->
+        <!--- <div class="header__logo">-->
+        <!--<a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>-->
+        <!--
             <a class="header__brand" href="index.html"><span>UBI </span>Solutions</a>
         </div>
         <nav class="header__menu animate__animated animate__flipInX">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html" class="nosotros">Nosotros</a>
-                    <!--<ul>
-                        <li><a href="about-us.html" class="metodologias">Tecnologías</a></li>
-                        <li><a href="about-us.html" class="about.us">Nuestra Empresa</a></li>
-                    </ul>-->
                 </li>
                 <li><a href="services.html" class="servicios">Servicios</a>
-                    <!--<ul>
-                        <li><a href="services.html" class="servicio_1">Desarrollo de sistemas</a></li>
-                        <li><a href="services.html" class="servicio_2">Módulos E-Commerce & BI</a></li>
-                        <li><a href="services.html" class="servicio_3">Sales Takes Order</a></li>
-                    </ul>-->
                 </li>
                 <li><a href="clients.html" class="clientes">Clientes</a></li>
                 <li><a href="contact.html" class="contacto">Contacto</a></li>
             </ul>
-            <!---               
+
+        </nav>-->
+        <!---               
             <aside class="header__language">
                 <h6> ¿Desea otro idioma?:</h6>
                 <input type="button" value="ESP">
@@ -52,6 +54,35 @@
             </aside>
             -->
 
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><span>UBI </span>Solutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clients.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
@@ -99,28 +130,6 @@
                 </ol>
             </section>
         </div>
-        <!--<table border="1" width=auto height=auto id="services__grid">
-                <thead class="services__table__title">
-                    <th></th>
-                    <th></th>
-                    <th></th>
-
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td class="services__service1 animate__animated animate__flash">
-                        </td>
-
-                        <td class="services__service2 animate__animated animate__flash">
-                        </td>
-
-                        <td class="services__service3 animate__animated animate__flash">
-
-                        </td>
-                    </tr>
-                </tbody>
-            </table>-->
 
         <div class="services__space">
 
@@ -130,38 +139,45 @@
     </main>
 
     <footer>
-        <section id="footer">
-            <!--<div class="footer__container"></div>-->
-            <div class="footer__container__info1">
+        <footer class="footer-distributed">
+            <div class="footer-left">
                 <a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>
-                <h3 class="footer__section__title">Acerca Nuestro</h3>
                 <ul class="footer__contact_info">
                     <li>
-                        <p>Dirección: Avenida xxxxxx 0000 C.P.: 0000</p>
+                        <p>Desarrollado por: Esteban Diaz - 2021. <strong> UBI Solutions. &copy; </strong></p>
                     </li>
-                    <li>
-                        <p>Teléfono: 1111-1111</p>
-                    </li>
-                    <li>
-                        <p>Email: contacto@ubisolutions.com</p>
-                    </li>
-
                 </ul>
+            </div>
+
+            <div class="footer-center">
+                <h3 class="footer__section__title">Acerca Nuestro</h3>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Dirección: Avenida xxxxxx 0000 C.P.: 0000</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>Teléfono: 1111-1111</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>Email: contacto@ubisolutions.com</p>
+                </div>
                 <h3 class="footer__section__title">Nuestras Redes</h3>
                 <ul class="footer__social__media">
-
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
                 </ul>
-                <!--<div class="developer__contain"></div>-->
-
             </div>
 
-            <div class="footer__container__info2">
-                <li>
-                    <p>Desarrollado por: Esteban Diaz - 2021. <strong> UBI Solutions. &copy; </strong></p>
-                </li>
-            </div>
-
-            <div class="footer__container__info3">
+            <div class="footer-right">
+                <p class="footer-company-about">
                 <h3 class="footer__section__title"> Envianos un mensaje rápido!</h3>
                 <form class="footer__contact__form">
                     <div class="footer__form">
@@ -182,12 +198,12 @@
                     <div class="footer__form">
                         <input type="submit" id="btn__submit" class="btn__send-message" value="Enviar Mensaje">
                     </div>
-
                 </form>
+                </p>
             </div>
-        </section>
-
+        </footer>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

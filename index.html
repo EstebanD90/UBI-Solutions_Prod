@@ -7,22 +7,34 @@
 
     <title>UBI Solutions - Unlimited Business Intelligence</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Este es el sitio web de mi empresa en desarrollamos sistemas relacionados al E-Commerce y al Business Intelligence">
+    <meta name="keywords"
+        content="Desarrollo de Sistemas, Software, Carro de Compras , E-Commerce, Business Intelligence">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
 
     <link rel="shortcut icon" href="icons/Logo-favicon.PNG">
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 </head>
 
@@ -31,8 +43,8 @@
 
     <header class="header">
         <!--<header role="banner" id="fh5co-header">-->
-        <div class="header__logo">
-            <!--<a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>-->
+        <!--<div class="header__logo">-->
+        <!--<a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>
             <a class="header__brand" href="index.html"><span>UBI </span>Solutions</a>
         </div>
         <div class="header__menu animate__animated animate__flipInX">
@@ -48,66 +60,49 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </ul>
-        </div>
-        <!--                  
-            <aside class="header__language">
-                <h6> ¿Desea otro idioma?:</h6>
-                <input type="button" value="ESP">
-                <input type="button" value="ENG">
-            </aside>-->
-        <!---
-        <div class="fluid-container">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse"
-                        data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <a class="navbar-brand" href="index.html"><span>UBI </span>Solutions</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
-                        <li><a href="about-us.html" data-nav-section="explore"><span>Nosotros</span></a></li>
-                        <li><a href="services.html" data-nav-section="testimony"><span>Servicios</span></a></li>
-                        <li><a href="clients.html" data-nav-section="pricing"><span>Clientes</span></a></li>
-                        <li><a href="contact.html" data-nav-section="services"><span>Contacto</span></a></li>
-                    </ul>
-                </div>
-            </nav>
         </div>-->
 
-        <!--
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><span>UBI </span>Solutions</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html" class="nosotros">Nosotros</a></li>
-                    <li><a href="services.html" class="servicios">Servicios</a></li>
-                    <li><a href="clients.html" class="clientes">Clientes</a></li>
-                    <li><a href="contact.html" class="contacto">Contacto</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clients.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-            -->
     </header>
 
     <main>
-        <!--<div id="page__content">
-            <div class="main__container">
-                <h3 class="main__titulo1 animate__animated animate__fadeInDown">Soluciones al alcance de tus necesidades
-                    para ayudar a mejorar tu
-                    gestión de ventas</h3>
-                <h2 class="main__titulo2 animate__animated animate__fadeInDown">Más que inteligencia de negocios.. </h2>
-                <h1 class="main__titulo3 animate__animated animate__fadeInDown"> Unlimited Businness Intelligence</h1>
-            </div>
-        </div>-->
-
         <section id="fh5co-home" data-section="home" style="background-image: url(images/pexels-photo-886465_2.jpeg);"
             data-stellar-background-ratio="0.5">
+            <!--<img sizes="(max-width: 1400px) 100vw, 1400px" class="imagen" srcset="images/pexels-photo-886465_2_sfzouf_c_scale,w_1400.jpg 1400w,
+            images/pexels-photo-886465_2_sfzouf_c_scale,w_1327.jpg 1327w,
+            images/pexels-photo-886465_2_sfzouf_c_scale,w_1033.jpg 1033w,
+            images/pexels-photo-886465_2_sfzouf_c_scale,w_683.jpg 683w,
+            images/pexels-photo-886465_2_sfzouf_c_scale,w_200.jpg 200w"
+                src="images/pexels-photo-886465_2_sfzouf_c_scale,w_1400.jpg" alt="">-->
+
             <div class="gradient"></div>
             <div class="container">
                 <div class="text-wrap">
@@ -173,38 +168,45 @@
 
 
     <footer>
-        <section id="footer">
-            <!--<div class="footer__container"></div>-->
-            <div class="footer__container__info1">
+        <footer class="footer-distributed">
+            <div class="footer-left">
                 <a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>
-                <h3 class="footer__section__title">Acerca Nuestro</h3>
                 <ul class="footer__contact_info">
                     <li>
-                        <p>Dirección: Avenida xxxxxx 0000 C.P.: 0000</p>
+                        <p>Desarrollado por: Esteban Diaz - 2021. <strong> UBI Solutions. &copy; </strong></p>
                     </li>
-                    <li>
-                        <p>Teléfono: 1111-1111</p>
-                    </li>
-                    <li>
-                        <p>Email: contacto@ubisolutions.com</p>
-                    </li>
-
                 </ul>
+            </div>
+
+            <div class="footer-center">
+                <h3 class="footer__section__title">Acerca Nuestro</h3>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Dirección: Avenida xxxxxx 0000 C.P.: 0000</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>Teléfono: 1111-1111</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>Email: contacto@ubisolutions.com</p>
+                </div>
                 <h3 class="footer__section__title">Nuestras Redes</h3>
                 <ul class="footer__social__media">
-
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
                 </ul>
-                <!--<div class="developer__contain"></div>-->
-
             </div>
 
-            <div class="footer__container__info2">
-                <li>
-                    <p>Desarrollado por: Esteban Diaz - 2021. <strong> UBI Solutions. &copy; </strong></p>
-                </li>
-            </div>
-
-            <div class="footer__container__info3">
+            <div class="footer-right">
+                <p class="footer-company-about">
                 <h3 class="footer__section__title"> Envianos un mensaje rápido!</h3>
                 <form class="footer__contact__form">
                     <div class="footer__form">
@@ -225,11 +227,10 @@
                     <div class="footer__form">
                         <input type="submit" id="btn__submit" class="btn__send-message" value="Enviar Mensaje">
                     </div>
-
                 </form>
+                </p>
             </div>
-        </section>
-
+        </footer>
     </footer>
 
 
