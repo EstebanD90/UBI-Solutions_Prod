@@ -132,145 +132,15 @@ body {
 }
 
 
-
-/*
-.header__brand {
-    font-family: "PT Sans", Arial, serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #535659;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-decoration: none;
-    justify-self: center;
-    align-self: center;
-  }
-
-.header__brand:hover  {
-    text-decoration: none;
-}
-  
-.header__brand > span {
-    color: #ff3b30;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-
-.header__menu {
-    font-family: "PT Sans", Arial, serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    justify-self: center;
-    align-self: center;
-    overflow: hidden;
+.sticky + .content {
+  padding-top: 60px;
 }
-
-.header__menu :hover{
-    color: red;
-
-}
-
-.header__menu a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.header__menu a.active {
-  color: red;
-}
-
-.header__menu .icon {
-  display: none;
-}
-
-@media screen and (max-width: 790px) {
-  .header__menu a:not(:first-child) {display: none;}
-  .header__menu a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 790px) {
-  .header__menu.responsive {position: relative;}
-  .header__menu.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .header__menu.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.header__menu ul {
-    display: inline-flex;
-    list-style: none;
-    margin-bottom: 0;
-}
-
-.header__menu ul li {
-    margin: 0 20px;
-    list-style-type: none;
-}
-
-.header__menu ul li:hover {
-    text-decoration: underline red;
-}
-
-.header__menu ul ul{
-    position: absolute;
-    display:none;
-}
-
-.header__menu ul ul li{
-    display: block;
-    padding-top: 20px;
-
-}
-
-.header__menu ul li:hover ul{
-    display: block;
-    background-color: white;
-    margin: 0px 0px 10px 0px;
-    padding: 0px 0px 10px 0px;
-    size: 12px;
-    
-    font-family: "PT Sans", Arial, serif;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.3;
-    font-size: 15px; 
-    overflow:auto;
-
-    
-}
-
-.header__menu ul li a{
-    text-decoration: none;
-    font-family: "PT Sans", Arial, serif;
-    color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.header__image img{
-    width: 100px;
-    height: auto;
-}
-
-
-.header__language {
-    margin: 0px;
-    padding: 0px;
-}*/
 
 
 #main {
@@ -331,7 +201,7 @@ body {
     font-style:normal;
     font-size: 2.5rem;
     padding-top: 200fr;
-
+    padding: 1.2rem;
 }
 
 #fh5co-home .main__titulo2 {
@@ -344,7 +214,7 @@ body {
     font-weight: lighter;
     font-style:normal;
     font-size: 3.0rem;
-    padding: 0;
+    padding: 1rem;
 
 }
 
@@ -360,6 +230,7 @@ body {
     font-size: 3.8rem;
     align-items: center;
     transform: scale(1.2);
+    padding: 2rem;
 
 }
 
@@ -462,9 +333,9 @@ body {
     font-weight: bold;
     font-style: normal;
     font-size: 2.0rem; 
-
 }
 
+/*
 .services__grid{
     border-width: 10px;
     background-color: lightgoldenrodyellow;
@@ -480,10 +351,76 @@ body {
     align-items: stretch;
     justify-content: space-between;
     align-content: center;
-
-    
-    
 }
+
+.services__sections {
+  background-color: lightgoldenrodyellow;
+}*/
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 2rem;
+  width: 33.3333%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style each tab content individually */
+#services__service1 {background-color:crimson;}
+#services__service2 {background-color:lightseagreen;}
+#services__service3 {background-color:coral}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: black;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+
 
 .services__header1 {
     color: lightcoral;
@@ -516,28 +453,19 @@ body {
 }
 
 
-.services__service1 {
-    color: #0962BB ;
-    padding: 20fr;
-    text-align: justify;
+#services__service1 {
     font-weight:normal;
     font-style: normal;
     font-size: 1.8rem; 
 }
 
-.services__service2 {
-    color:#0962BB ;
-    padding: 20fr;
-    text-align: justify;
+#services__service2 {
     font-weight:normal;
     font-style: normal;
     font-size: 1.8rem;  
 }
 
-.services__service3 {
-    color: #0962BB;
-    padding: 20fr;
-    text-align: justify;
+#services__service3 {
     font-weight:normal;
     font-style: normal;
     font-size: 1.8rem; 
@@ -549,18 +477,18 @@ body {
 }
 
 .about-us__main {
-    background-color:lightyellow;
+    background-color:lightgoldenrodyellow;
 }
 
 
 .about-us__titulo {
     background-color: #0962BB;
-    padding: 10px;
+    padding: 20px;
     color:lightcoral;
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-    font-size: 2.1rem; 
+    font-size: 2.2rem; 
 }
 
 #about-us__contain {
@@ -660,7 +588,6 @@ body {
 
 
 .clients__titulo {
-    background-color: white;
     background-color: #0962BB;
     padding: 20px;
     color:lightcoral;
@@ -740,7 +667,9 @@ body {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #0962BB;
+  padding: 5px;
+  color:lightcoral;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -753,9 +682,9 @@ body {
 /* Fading animation */
 .clients-fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 4s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
@@ -819,13 +748,13 @@ body {
 
 
 .contact__titulo {
-    background-color: #0962BB;
-    padding: 10px;
-    color:lightcoral;
-    text-align: center;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 3.2rem; 
+  background-color: #0962BB;
+  padding: 20px;
+  color:lightcoral;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.2rem; 
 
 }
 
