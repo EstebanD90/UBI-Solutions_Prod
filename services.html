@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,36 +25,12 @@
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
     <header class="header">
-        <!--- <div class="header__logo">-->
-        <!--<a href="index.html"><img src="icons/Logo.JPG" alt="logo de mi empresa"> </a>-->
-        <!--
-            <a class="header__brand" href="index.html"><span>UBI </span>Solutions</a>
-        </div>
-        <nav class="header__menu animate__animated animate__flipInX">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html" class="nosotros">Nosotros</a>
-                </li>
-                <li><a href="services.html" class="servicios">Servicios</a>
-                </li>
-                <li><a href="clients.html" class="clientes">Clientes</a></li>
-                <li><a href="contact.html" class="contacto">Contacto</a></li>
-            </ul>
-
-        </nav>-->
-        <!---               
-            <aside class="header__language">
-                <h6> ¿Desea otro idioma?:</h6>
-                <input type="button" value="ESP">
-                <input type="button" value="ENG">
-            </aside>
-            -->
-
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -93,6 +70,7 @@
             <h2>Servicios</h2>
         </div>
 
+        <!--
         <div class="services__grid">
             <header class="services__header1">Desarrollo de sistemas</header>
             <header class="services__header2">Módulos E-Commerce & BI</header>
@@ -129,8 +107,109 @@
                         ejecutivo de cuenta </li>
                 </ol>
             </section>
+        </div>-->
+
+        <!--
+        <div class="services__sections">
+            <header class="services__header1">Desarrollo de sistemas</header>
+
+
+            <section class="services__service1 animate__animated animate__flash">En UBI Solutions nos
+                caracterizamos por desarrollar software a la
+                medida de cada cliente.
+                Nuestro trabajo tiene las siguientes caracteristicas:
+                <ul>
+                    <li>Desarrollo con tableros SCRUM</li>
+                    <li>Procesos colaborativos con metodologias agiles</li>
+                    <li>Desarrollo y controles con gestión de calidad</li>
+                </ul>
+            </section>
+
+            <header class="services__header2">Módulos E-Commerce & BI</header>
+            <section class="services__service2 animate__animated animate__flash">El Business Intelligence se
+                desarrolla en cada empresa para
+                ofrecerse
+                con la mejor ventaja
+                ante
+                los competidores. Con esto trabajamos, y hacia allí nos dirigimos. El manejo de la
+                información
+                del
+                negocio se vuelve segura y de total valor, con nuestras metodologías y tecnología aplicada.</section>
+
+            <header class="services__header3">Sales Takes Order <span class="badge badge-secondary">Nuevo!</span>
+            </header>
+            <section class="services__service3 animate__animated animate__flash">Ofrecemos soluciones con un desarrollo
+                aplicado y robusto, para potenciar las
+                herramientas con las que podes contar. Algunos productos destacables son:
+                <ol>
+                    <li><strong> Sales Takes Order:</strong>
+                        tomador de pedidos de ventas </li>
+                    <li> <strong> Pricing:</strong> modulo de listas de precios adaptados para distintas
+                        organizaciones de ventas </li>
+                    <li> <strong> CC:</strong> módulo de control de cuentas corrientes adaptado para cada
+                        ejecutivo de cuenta </li>
+                </ol>
+            </section>
+        </div>-->
+
+
+
+        <div id="services__service1" class="tabcontent">
+            <h1>Desarrollo de sistemas</h1>
+            <p>En UBI Solutions nos
+                caracterizamos por desarrollar software a la
+                medida de cada cliente.
+                Nuestro trabajo tiene las siguientes caracteristicas:
+            <ul class="check-list">
+                <li>Desarrollo con tableros SCRUM</li>
+                <li>Procesos colaborativos con metodologias agiles</li>
+                <li>Desarrollo y controles con gestión de calidad</li>
+            </ul>
+            </p>
         </div>
 
+        <div id="services__service2" class="tabcontent">
+            <h1>Módulos E-Commerce & BI</h1>
+            <p>El Business Intelligence se desarrolla en cada empresa para ofrecerse
+                con la mejor ventaja ante
+                los competidores.</p>
+
+            <p> Con esto trabajamos, y hacia allí nos dirigimos. El manejo de la
+                información
+                del
+                negocio se vuelve segura y de total valor, con nuestras metodologías y tecnología aplicada.</p>
+        </div>
+
+        <div id="services__service3" class="tabcontent">
+            <h1>Sales Takes Order <span class="badge badge-secondary">Nuevo!</span></h1>
+            <p>Ofrecemos soluciones con un desarrollo
+                aplicado y robusto, para potenciar las
+                herramientas con las que podes contar. Algunos productos destacables son:
+            <ol>
+                <li><strong> Sales Takes Order:</strong>
+                    tomador de pedidos de ventas </li>
+                <li> <strong> Pricing:</strong> modulo de listas de precios adaptados para distintas
+                    organizaciones de ventas </li>
+                <li> <strong> CC:</strong> módulo de control de cuentas corrientes adaptado para cada
+                    ejecutivo de cuenta </li>
+            </ol>
+            </p>
+        </div>
+
+        <button class="tablink" onclick="openService('services__service1', this, 'crimson')" id="defaultOpen">Desarrollo
+            de
+            sistemas</button>
+        <button class="tablink" onclick="openService('services__service2', this, 'lightseagreen')">Módulos
+            E-Commerce
+            &
+            BI</button>
+        <button class="tablink" onclick="openService('services__service3', this, 'coral')">Sales Takes
+            Order</button>
+
+        <div class="services__space">
+
+
+        </div>
         <div class="services__space">
 
 
@@ -177,7 +256,7 @@
             </div>
 
             <div class="footer-right">
-                <p class="footer-company-about">
+                <p class="footer-company-about"> </p>
                 <h3 class="footer__section__title"> Envianos un mensaje rápido!</h3>
                 <form class="footer__contact__form">
                     <div class="footer__form">
@@ -199,7 +278,7 @@
                         <input type="submit" id="btn__submit" class="btn__send-message" value="Enviar Mensaje">
                     </div>
                 </form>
-                </p>
+
             </div>
         </footer>
     </footer>
@@ -216,6 +295,31 @@
         crossorigin="anonymous"></script>
 
 
+    <script>
+        function openService(serviceName, elmnt, color) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(serviceName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
 </body>
 
