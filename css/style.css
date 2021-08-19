@@ -384,9 +384,27 @@ body {
 }
 
 /* Style each tab content individually */
-#services__service1 {background-color:crimson;}
-#services__service2 {background-color:lightseagreen;}
-#services__service3 {background-color:coral}
+
+#services__service1 {
+  font-weight:normal;
+  font-style: normal;
+  font-size: 1.8rem; 
+  background-color:crimson;
+}
+
+#services__service2 {
+  font-weight:normal;
+  font-style: normal;
+  font-size: 1.8rem;  
+  background-color:lightseagreen;
+}
+
+#services__service3 {
+  font-weight:normal;
+  font-style: normal;
+  font-size: 1.8rem; 
+  background-color:coral
+}
 
 .check-list {
   margin: 0;
@@ -453,23 +471,7 @@ body {
 }
 
 
-#services__service1 {
-    font-weight:normal;
-    font-style: normal;
-    font-size: 1.8rem; 
-}
 
-#services__service2 {
-    font-weight:normal;
-    font-style: normal;
-    font-size: 1.8rem;  
-}
-
-#services__service3 {
-    font-weight:normal;
-    font-style: normal;
-    font-size: 1.8rem; 
-}
 
 .services__space { 
     padding: 180px;
